@@ -1,0 +1,21 @@
+\chapter{System Description}
+The purpose of this chapter is to give an overview on how the the system topology might look like, as shown in figure \ref{overview}. The computer vision part of the system is in the dashed box in the software block. The "Optical Flow/SfM" block calculates the rotation, velocity and/or position and inputs that to the "Kalman Filter/Controller" block, and would correspond to the work done in Chapter 3. This is supposed to complement the IMU data coming from the ArduPilot. Since the data from the "Optical Flow/SfM" block is not always available (due to e.g. too few trackable points) it should be able to tell the Kalman Filter if its data should be considered at all.
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.75]{./Chapter6/Pics/overview.pdf}
+\caption[System Overview]{The system topology is shown in this simplified diagram}
+\label{overview}
+\end{figure}
+
+The "Windmill navigation" block uses computer vision to detect the blade and make decisions on where the UAV should move relative to the blade and would correspond to Chapter 4 in this report. The flow of the "Windmill navigation" while navigating the blade is given in figure \ref{flow}. The part of centering the UAV in front of the windturbine hub would also be in the "Windmill navigation" block, but that is not the scope of this project. The "Windmill navigation" block should therefore output either desired velocity vectors or waypoints which the "Kalman Filter/Controller" can use for trajectory execution. Also, a feedback of the estimated states from "Kalman Filter/Controller" to "Windmill navigation" is desirable as mentioned in section \ref{sec:imu}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.75]{./Chapter6/Pics/flowuav.pdf}
+\caption[Flow Chart]{Flow chart for blade navigation}
+\label{flow}
+\end{figure}
+\todo{Write shit here}
+The "Kalman Filter/Controller" block is responsible for estimating the states of the UAV (attitude, velocity, position etcetera) and give control commands to the ArduPilot which controls the motors. The mathematical model of the multicopter is of course a part of this block. \emph{Sondre Høglund}'s project was focused on the Kalman Filter, although his topology is a little different as his Kalman Filter is based on receiving a vector from the optical flow algorithm.
+
+The ArduPilot should be able to receive control input from both the telemetry link for manual control and the PandaBoard for autonomous control. There must therefore be some kind of switch between the two, controlled from the ground so that manual control mode is available when need be.

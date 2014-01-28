@@ -1,0 +1,68 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+\title{Table of Contents}
+\date{}
+\maketitle
+
+\begin{enumerate}
+  \item Introduction
+  \begin{enumerate}
+    \item Background and motivation
+    \item Previous work
+    \item Contribution and scope of this report
+    \item Organization of this report
+    \item Nomenclature and notation
+  \end{enumerate}
+  
+  \item Materials and methods
+  \begin{enumerate}
+    \item Key Features of a Wind Turbine
+    \item Program Overview and Strategy
+    \iten Module Descriptions
+    \begin{enumerate}
+      \item Color Thresholding
+      \item Canny Edge Detection
+      \item Dilation filter
+      \item Finding Contours 
+    \end{enumerate}
+    \item Autonomous Parameter Tuning Using Moments
+    \item Input Samples
+    \item Output Data
+  \end{enumerate}
+
+  \item Results
+  \begin{enumerate}
+    \item Image as Input
+    \item Ill Conditioned Image as Input
+    \item Video as Input
+    \item Computation Speed
+  \end{enumerate}
+
+  \item Discussion
+  \begin{enumerate}
+    \item Applicability of Outputs
+    \item Causes of Errors
+    \item Cross-Platform Compatibility
+    \item Further Work
+    \begin{enumerate}
+     \item 
+    \end{enumerate}
+
+  \end{enumerate}
+  
+  \item Conclusion
+  \item Acknowledgements
+  \item Literature Cited
+  \item Appendices
+  \begin{enumerate}
+   \item C++ Code
+   \item UML Diagrams?
+  \end{enumerate}
+
+  
+\end{enumerate}
+
+
+
+
+\end{document}

@@ -49,7 +49,19 @@ CMakeFiles/proj.dir/gui.cpp.o: /usr/local/include/opencv2/video/background_segm.
 CMakeFiles/proj.dir/gui.cpp.o: /usr/local/include/opencv2/video/tracking.hpp
 CMakeFiles/proj.dir/gui.cpp.o: /usr/local/include/opencv2/video/video.hpp
 
+CMakeFiles/proj.dir/houghLine.cpp.o: houghLine.cpp
+CMakeFiles/proj.dir/houghLine.cpp.o: houghLine.h
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/core/core.hpp
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/core/core_c.h
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/core/mat.hpp
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/core/operations.hpp
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/core/types_c.h
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/core/version.hpp
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/imgproc/imgproc.hpp
+CMakeFiles/proj.dir/houghLine.cpp.o: /usr/local/include/opencv2/imgproc/types_c.h
+
 CMakeFiles/proj.dir/houghTransform.cpp.o: gui.h
+CMakeFiles/proj.dir/houghTransform.cpp.o: houghLine.h
 CMakeFiles/proj.dir/houghTransform.cpp.o: houghTransform.cpp
 CMakeFiles/proj.dir/houghTransform.cpp.o: houghTransform.h
 CMakeFiles/proj.dir/houghTransform.cpp.o: image.h

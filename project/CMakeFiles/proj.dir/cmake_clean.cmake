@@ -6,6 +6,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/proj.dir/target.cpp.o"
   "CMakeFiles/proj.dir/fileIO.cpp.o"
   "CMakeFiles/proj.dir/houghTransform.cpp.o"
+  "CMakeFiles/proj.dir/houghLine.cpp.o"
   "proj.pdb"
   "proj"
 )

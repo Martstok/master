@@ -35,7 +35,7 @@ public:
     cv::Mat temp;
     cv::Mat temp2;
     std::vector<cv::Mat> bwList;
-    cv::Mat plot;
+    cv::Mat houghPlot;
 
 };
 

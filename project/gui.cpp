@@ -56,14 +56,14 @@ void initializeGui(GuiParameters* guiParameters){
     moveWindow("result",0,0);
     namedWindow("result2",CV_WINDOW_AUTOSIZE);
     initializeTrackbars(guiParameters);
-    namedWindow("plot", CV_WINDOW_AUTOSIZE);
+    namedWindow("houghPlot", CV_WINDOW_AUTOSIZE);
 }
 
 void updateWindows(Image* img){
     imshow("frame", img->rawLR);
-//    imshow("hough", img->hough);
+    imshow("hough", img->hough);
 //    imshow("BW", img->bw);
     imshow("result", img->result);
     imshow("result2", img->result2);
-    imshow("plot", img->plot);
+    imshow("houghPlot", img->houghPlot);
 }

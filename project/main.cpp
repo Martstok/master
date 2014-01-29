@@ -51,7 +51,7 @@ int main(){
     if (sourceType == "video"){
     img->cap >> img->raw;
     }
-            img->plot = Mat(181,400, CV_8UC1);
+            img->houghPlot = Mat(181,400, CV_8UC1);
 
     //Main loop of the program
     while(true){
@@ -103,18 +103,21 @@ int main(){
 //        imshow("calcHist Demo", histImage );
         vector<double> X;
         vector<double> Y;
-        img->plot = Scalar(0);
+        img->houghPlot = Scalar(0);
 //        -----------------------In Main: Draw long hough lines
 
 
         HoughTransform* hough = new HoughTransform;
         hough->generateLongHoughLines(img, guiParameters);
         hough->drawLongHoughLines(img, guiParameters);
+        hough->extractVerticalLines(img,-12,2);
+        hough->groupLinesByAngle();
 
 
         //------------------------In Main: Draw short hough lines
 
-//        drawShortHoughLines(img, guiParameters);
+        hough->generateShortHoughLines(img, guiParameters);
+        hough->drawShortHoughLines(img, guiParameters);
 
 
 

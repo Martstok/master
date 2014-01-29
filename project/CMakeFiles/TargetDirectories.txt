@@ -1,1 +1,1 @@
-/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir
+/home/martin/Documents/master/project/CMakeFiles/proj.dir

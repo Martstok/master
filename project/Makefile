@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/martin/Documents/masteroppgave/project
+CMAKE_SOURCE_DIR = /home/martin/Documents/master/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/martin/Documents/masteroppgave/project
+CMAKE_BINARY_DIR = /home/martin/Documents/master/project
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/martin/Documents/masteroppgave/project/CMakeFiles /home/martin/Documents/masteroppgave/project/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/martin/Documents/master/project/CMakeFiles /home/martin/Documents/master/project/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/martin/Documents/masteroppgave/project/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/martin/Documents/master/project/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -182,6 +182,30 @@ gui.s: gui.cpp.s
 gui.cpp.s:
 	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/gui.cpp.s
 .PHONY : gui.cpp.s
+
+houghLine.o: houghLine.cpp.o
+.PHONY : houghLine.o
+
+# target to build an object file
+houghLine.cpp.o:
+	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/houghLine.cpp.o
+.PHONY : houghLine.cpp.o
+
+houghLine.i: houghLine.cpp.i
+.PHONY : houghLine.i
+
+# target to preprocess a source file
+houghLine.cpp.i:
+	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/houghLine.cpp.i
+.PHONY : houghLine.cpp.i
+
+houghLine.s: houghLine.cpp.s
+.PHONY : houghLine.s
+
+# target to generate assembly for a file
+houghLine.cpp.s:
+	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/houghLine.cpp.s
+.PHONY : houghLine.cpp.s
 
 houghTransform.o: houghTransform.cpp.o
 .PHONY : houghTransform.o
@@ -297,6 +321,9 @@ help:
 	@echo "... gui.o"
 	@echo "... gui.i"
 	@echo "... gui.s"
+	@echo "... houghLine.o"
+	@echo "... houghLine.i"
+	@echo "... houghLine.s"
 	@echo "... houghTransform.o"
 	@echo "... houghTransform.i"
 	@echo "... houghTransform.s"

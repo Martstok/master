@@ -4,13 +4,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/martin/Documents/masteroppgave/project/colorThresholding.cpp" "/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/colorThresholding.cpp.o"
-  "/home/martin/Documents/masteroppgave/project/fileIO.cpp" "/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/fileIO.cpp.o"
-  "/home/martin/Documents/masteroppgave/project/gui.cpp" "/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/gui.cpp.o"
-  "/home/martin/Documents/masteroppgave/project/houghTransform.cpp" "/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/houghTransform.cpp.o"
-  "/home/martin/Documents/masteroppgave/project/image.cpp" "/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/image.cpp.o"
-  "/home/martin/Documents/masteroppgave/project/main.cpp" "/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/main.cpp.o"
-  "/home/martin/Documents/masteroppgave/project/target.cpp" "/home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/target.cpp.o"
+  "/home/martin/Documents/master/project/colorThresholding.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/colorThresholding.cpp.o"
+  "/home/martin/Documents/master/project/fileIO.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/fileIO.cpp.o"
+  "/home/martin/Documents/master/project/gui.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/gui.cpp.o"
+  "/home/martin/Documents/master/project/houghLine.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/houghLine.cpp.o"
+  "/home/martin/Documents/master/project/houghTransform.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/houghTransform.cpp.o"
+  "/home/martin/Documents/master/project/image.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/image.cpp.o"
+  "/home/martin/Documents/master/project/main.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/main.cpp.o"
+  "/home/martin/Documents/master/project/target.cpp" "/home/martin/Documents/master/project/CMakeFiles/proj.dir/target.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

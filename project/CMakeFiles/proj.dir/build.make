@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/martin/Documents/masteroppgave/project
+CMAKE_SOURCE_DIR = /home/martin/Documents/master/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/martin/Documents/masteroppgave/project
+CMAKE_BINARY_DIR = /home/martin/Documents/master/project
 
 # Include any dependencies generated for this target.
 include CMakeFiles/proj.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/proj.dir/flags.make
 
 CMakeFiles/proj.dir/main.cpp.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/main.cpp.o: main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/masteroppgave/project/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/main.cpp.o -c /home/martin/Documents/masteroppgave/project/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/main.cpp.o -c /home/martin/Documents/master/project/main.cpp
 
 CMakeFiles/proj.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/masteroppgave/project/main.cpp > CMakeFiles/proj.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/main.cpp > CMakeFiles/proj.dir/main.cpp.i
 
 CMakeFiles/proj.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/masteroppgave/project/main.cpp -o CMakeFiles/proj.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/main.cpp -o CMakeFiles/proj.dir/main.cpp.s
 
 CMakeFiles/proj.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/proj.dir/main.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/proj.dir/main.cpp.o.provides.build: CMakeFiles/proj.dir/main.cpp.o
 
 CMakeFiles/proj.dir/image.cpp.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/image.cpp.o: image.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/masteroppgave/project/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/image.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/image.cpp.o -c /home/martin/Documents/masteroppgave/project/image.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/image.cpp.o -c /home/martin/Documents/master/project/image.cpp
 
 CMakeFiles/proj.dir/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/image.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/masteroppgave/project/image.cpp > CMakeFiles/proj.dir/image.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/image.cpp > CMakeFiles/proj.dir/image.cpp.i
 
 CMakeFiles/proj.dir/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/image.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/masteroppgave/project/image.cpp -o CMakeFiles/proj.dir/image.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/image.cpp -o CMakeFiles/proj.dir/image.cpp.s
 
 CMakeFiles/proj.dir/image.cpp.o.requires:
 .PHONY : CMakeFiles/proj.dir/image.cpp.o.requires
@@ -97,17 +97,17 @@ CMakeFiles/proj.dir/image.cpp.o.provides.build: CMakeFiles/proj.dir/image.cpp.o
 
 CMakeFiles/proj.dir/gui.cpp.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/gui.cpp.o: gui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/masteroppgave/project/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/gui.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/gui.cpp.o -c /home/martin/Documents/masteroppgave/project/gui.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/gui.cpp.o -c /home/martin/Documents/master/project/gui.cpp
 
 CMakeFiles/proj.dir/gui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/gui.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/masteroppgave/project/gui.cpp > CMakeFiles/proj.dir/gui.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/gui.cpp > CMakeFiles/proj.dir/gui.cpp.i
 
 CMakeFiles/proj.dir/gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/gui.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/masteroppgave/project/gui.cpp -o CMakeFiles/proj.dir/gui.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/gui.cpp -o CMakeFiles/proj.dir/gui.cpp.s
 
 CMakeFiles/proj.dir/gui.cpp.o.requires:
 .PHONY : CMakeFiles/proj.dir/gui.cpp.o.requires
@@ -120,17 +120,17 @@ CMakeFiles/proj.dir/gui.cpp.o.provides.build: CMakeFiles/proj.dir/gui.cpp.o
 
 CMakeFiles/proj.dir/colorThresholding.cpp.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/colorThresholding.cpp.o: colorThresholding.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/masteroppgave/project/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/colorThresholding.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/colorThresholding.cpp.o -c /home/martin/Documents/masteroppgave/project/colorThresholding.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/colorThresholding.cpp.o -c /home/martin/Documents/master/project/colorThresholding.cpp
 
 CMakeFiles/proj.dir/colorThresholding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/colorThresholding.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/masteroppgave/project/colorThresholding.cpp > CMakeFiles/proj.dir/colorThresholding.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/colorThresholding.cpp > CMakeFiles/proj.dir/colorThresholding.cpp.i
 
 CMakeFiles/proj.dir/colorThresholding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/colorThresholding.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/masteroppgave/project/colorThresholding.cpp -o CMakeFiles/proj.dir/colorThresholding.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/colorThresholding.cpp -o CMakeFiles/proj.dir/colorThresholding.cpp.s
 
 CMakeFiles/proj.dir/colorThresholding.cpp.o.requires:
 .PHONY : CMakeFiles/proj.dir/colorThresholding.cpp.o.requires
@@ -143,17 +143,17 @@ CMakeFiles/proj.dir/colorThresholding.cpp.o.provides.build: CMakeFiles/proj.dir/
 
 CMakeFiles/proj.dir/target.cpp.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/target.cpp.o: target.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/masteroppgave/project/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/target.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/target.cpp.o -c /home/martin/Documents/masteroppgave/project/target.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/target.cpp.o -c /home/martin/Documents/master/project/target.cpp
 
 CMakeFiles/proj.dir/target.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/target.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/masteroppgave/project/target.cpp > CMakeFiles/proj.dir/target.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/target.cpp > CMakeFiles/proj.dir/target.cpp.i
 
 CMakeFiles/proj.dir/target.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/target.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/masteroppgave/project/target.cpp -o CMakeFiles/proj.dir/target.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/target.cpp -o CMakeFiles/proj.dir/target.cpp.s
 
 CMakeFiles/proj.dir/target.cpp.o.requires:
 .PHONY : CMakeFiles/proj.dir/target.cpp.o.requires
@@ -166,17 +166,17 @@ CMakeFiles/proj.dir/target.cpp.o.provides.build: CMakeFiles/proj.dir/target.cpp.
 
 CMakeFiles/proj.dir/fileIO.cpp.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/fileIO.cpp.o: fileIO.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/masteroppgave/project/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/fileIO.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/fileIO.cpp.o -c /home/martin/Documents/masteroppgave/project/fileIO.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/fileIO.cpp.o -c /home/martin/Documents/master/project/fileIO.cpp
 
 CMakeFiles/proj.dir/fileIO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/fileIO.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/masteroppgave/project/fileIO.cpp > CMakeFiles/proj.dir/fileIO.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/fileIO.cpp > CMakeFiles/proj.dir/fileIO.cpp.i
 
 CMakeFiles/proj.dir/fileIO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/fileIO.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/masteroppgave/project/fileIO.cpp -o CMakeFiles/proj.dir/fileIO.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/fileIO.cpp -o CMakeFiles/proj.dir/fileIO.cpp.s
 
 CMakeFiles/proj.dir/fileIO.cpp.o.requires:
 .PHONY : CMakeFiles/proj.dir/fileIO.cpp.o.requires
@@ -189,17 +189,17 @@ CMakeFiles/proj.dir/fileIO.cpp.o.provides.build: CMakeFiles/proj.dir/fileIO.cpp.
 
 CMakeFiles/proj.dir/houghTransform.cpp.o: CMakeFiles/proj.dir/flags.make
 CMakeFiles/proj.dir/houghTransform.cpp.o: houghTransform.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/masteroppgave/project/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/houghTransform.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/houghTransform.cpp.o -c /home/martin/Documents/masteroppgave/project/houghTransform.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/houghTransform.cpp.o -c /home/martin/Documents/master/project/houghTransform.cpp
 
 CMakeFiles/proj.dir/houghTransform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/houghTransform.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/masteroppgave/project/houghTransform.cpp > CMakeFiles/proj.dir/houghTransform.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/houghTransform.cpp > CMakeFiles/proj.dir/houghTransform.cpp.i
 
 CMakeFiles/proj.dir/houghTransform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/houghTransform.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/masteroppgave/project/houghTransform.cpp -o CMakeFiles/proj.dir/houghTransform.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/houghTransform.cpp -o CMakeFiles/proj.dir/houghTransform.cpp.s
 
 CMakeFiles/proj.dir/houghTransform.cpp.o.requires:
 .PHONY : CMakeFiles/proj.dir/houghTransform.cpp.o.requires
@@ -210,6 +210,29 @@ CMakeFiles/proj.dir/houghTransform.cpp.o.provides: CMakeFiles/proj.dir/houghTran
 
 CMakeFiles/proj.dir/houghTransform.cpp.o.provides.build: CMakeFiles/proj.dir/houghTransform.cpp.o
 
+CMakeFiles/proj.dir/houghLine.cpp.o: CMakeFiles/proj.dir/flags.make
+CMakeFiles/proj.dir/houghLine.cpp.o: houghLine.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/martin/Documents/master/project/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/proj.dir/houghLine.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/proj.dir/houghLine.cpp.o -c /home/martin/Documents/master/project/houghLine.cpp
+
+CMakeFiles/proj.dir/houghLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proj.dir/houghLine.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/martin/Documents/master/project/houghLine.cpp > CMakeFiles/proj.dir/houghLine.cpp.i
+
+CMakeFiles/proj.dir/houghLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proj.dir/houghLine.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/martin/Documents/master/project/houghLine.cpp -o CMakeFiles/proj.dir/houghLine.cpp.s
+
+CMakeFiles/proj.dir/houghLine.cpp.o.requires:
+.PHONY : CMakeFiles/proj.dir/houghLine.cpp.o.requires
+
+CMakeFiles/proj.dir/houghLine.cpp.o.provides: CMakeFiles/proj.dir/houghLine.cpp.o.requires
+	$(MAKE) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/houghLine.cpp.o.provides.build
+.PHONY : CMakeFiles/proj.dir/houghLine.cpp.o.provides
+
+CMakeFiles/proj.dir/houghLine.cpp.o.provides.build: CMakeFiles/proj.dir/houghLine.cpp.o
+
 # Object files for target proj
 proj_OBJECTS = \
 "CMakeFiles/proj.dir/main.cpp.o" \
@@ -218,7 +241,8 @@ proj_OBJECTS = \
 "CMakeFiles/proj.dir/colorThresholding.cpp.o" \
 "CMakeFiles/proj.dir/target.cpp.o" \
 "CMakeFiles/proj.dir/fileIO.cpp.o" \
-"CMakeFiles/proj.dir/houghTransform.cpp.o"
+"CMakeFiles/proj.dir/houghTransform.cpp.o" \
+"CMakeFiles/proj.dir/houghLine.cpp.o"
 
 # External object files for target proj
 proj_EXTERNAL_OBJECTS =
@@ -230,6 +254,7 @@ proj: CMakeFiles/proj.dir/colorThresholding.cpp.o
 proj: CMakeFiles/proj.dir/target.cpp.o
 proj: CMakeFiles/proj.dir/fileIO.cpp.o
 proj: CMakeFiles/proj.dir/houghTransform.cpp.o
+proj: CMakeFiles/proj.dir/houghLine.cpp.o
 proj: CMakeFiles/proj.dir/build.make
 proj: /usr/local/lib/libopencv_calib3d.so
 proj: /usr/local/lib/libopencv_contrib.so
@@ -264,6 +289,7 @@ CMakeFiles/proj.dir/requires: CMakeFiles/proj.dir/colorThresholding.cpp.o.requir
 CMakeFiles/proj.dir/requires: CMakeFiles/proj.dir/target.cpp.o.requires
 CMakeFiles/proj.dir/requires: CMakeFiles/proj.dir/fileIO.cpp.o.requires
 CMakeFiles/proj.dir/requires: CMakeFiles/proj.dir/houghTransform.cpp.o.requires
+CMakeFiles/proj.dir/requires: CMakeFiles/proj.dir/houghLine.cpp.o.requires
 .PHONY : CMakeFiles/proj.dir/requires
 
 CMakeFiles/proj.dir/clean:
@@ -271,6 +297,6 @@ CMakeFiles/proj.dir/clean:
 .PHONY : CMakeFiles/proj.dir/clean
 
 CMakeFiles/proj.dir/depend:
-	cd /home/martin/Documents/masteroppgave/project && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/martin/Documents/masteroppgave/project /home/martin/Documents/masteroppgave/project /home/martin/Documents/masteroppgave/project /home/martin/Documents/masteroppgave/project /home/martin/Documents/masteroppgave/project/CMakeFiles/proj.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/martin/Documents/master/project && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/martin/Documents/master/project /home/martin/Documents/master/project /home/martin/Documents/master/project /home/martin/Documents/master/project /home/martin/Documents/master/project/CMakeFiles/proj.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/proj.dir/depend
 

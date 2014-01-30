@@ -23,6 +23,7 @@ public:
     std::vector<std::vector<HoughLine*> > lineGroups;
 
     HoughTransform();
+    ~HoughTransform();
     void generateLongHoughLines(Image* img, GuiParameters* guiParameters);
     void generateShortHoughLines(Image* img, GuiParameters* guiParameters);
     void drawLongHoughLines(Image* img, GuiParameters* guiParameters);

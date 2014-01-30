@@ -11,6 +11,12 @@ HoughTransform::HoughTransform()
 {
 }
 
+HoughTransform::~HoughTransform(){
+    for(int i = 0; i < this->longLines.size(); i++){
+        delete this->longLines[i];
+    }
+}
+
 //Canny transform, then hough transform
 //void HoughTransform::generateLongHoughLines(Image* img, GuiParameters* guiParameters){
 //    img->rawLR.copyTo(img->canny);
@@ -102,22 +108,61 @@ void HoughTransform::extractVerticalLines(Image* img, int frameRollBias, int tol
 }
 
 void HoughTransform::groupLinesByAngle(){
+    bool mergeFirstAndLast = false;
     sortLinesByAngle();
+    this->lineGroups.clear();
     int tolerance = 3;
     vector<HoughLine*> newGroup;
     for(int i = 0; i < this->longLines.size(); i++){
-        if(this->longLines[i]->angle > newGroup.back()->angle + tolerance){
+        cout << "Examining: " << this->longLines[i]->angle << endl;
+
+
+//        Create new group if previous angle differs by more than tolerance
+        if(!newGroup.empty() && (this->longLines[i]->angle > newGroup.back()->angle + tolerance)){
             this->lineGroups.push_back(newGroup);
             newGroup.clear();
             newGroup.push_back(this->longLines[i]);
         }
+
+//        Continue in same group previous angle differs by <= tolerance
         else{
             newGroup.push_back(this->longLines[i]);
 
         }
+
+//        Merge last group with first if belong together
+        cout << "begin merge" << endl;
+        bool a = (i+1 == this->longLines.size());
+        cout << "---" << endl;
+//        int b = this->lineGroups.front().front()->angle;
+        cout << "---2" << endl;
+        int c = newGroup.back()->angle;
+        cout << "---3" << endl;
+        cout << "i = " << i << endl;
+        if(i+1 == this->longLines.size() && (i != 0) && (!this->lineGroups.empty()) && (this->lineGroups.front().front()->angle - (newGroup.back()->angle - 180))<tolerance){
+            cout << "check if groups is empty" << endl;
+                mergeFirstAndLast = true;
+                cout << "initiating loop" << endl;
+                for(int i = newGroup.size()-1; i>=0; i--){
+                    this->lineGroups[0].insert(this->lineGroups[0].begin(), newGroup[i]);
+            }
+        }
+        cout << "end merge" << endl;
     }
-    this->lineGroups.push_back(newGroup);
+    if(!mergeFirstAndLast){
+        this->lineGroups.push_back(newGroup);
+    }
+
+    for(int i = 0; i < this->lineGroups.size(); i++){
+        cout << "New group ------------------" << endl;
+        for(int j = 0; j < this->lineGroups[i].size(); j++){
+//            cout << "Angle: " << (this->lineGroups[i][j])->angle << endl;
+        }
+    }
+    cout << "nr of groups: " << this->lineGroups.size() << endl;
+    newGroup.clear();
 }
+
 
 void HoughTransform::sortLinesByAngle(){
     if (this->longLines.empty()){
@@ -132,6 +177,9 @@ void HoughTransform::sortLinesByAngle(){
                 sortedLines.insert(it, this->longLines[i]);
                 break;
             }
+        }
+        if(it == sortedLines.end()){
+            sortedLines.push_back(this->longLines[i]);
         }
     }
     this->longLines = sortedLines;

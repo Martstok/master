@@ -18,7 +18,7 @@ GuiParameters::GuiParameters()
         c_upper[i][2]=255;
     }
     dilate = 10;
-    houghThreshold = 1;
+    houghThreshold = 50;
     houghMaxGap = 10;
     houghMinLength = 50;
 }

@@ -55,11 +55,11 @@ int main(){
 
     //Main loop of the program
     while(true){
-        // Output time measurement
-//        cout << endl << "-------Entering new iteration---------" << endl;
-//        double elapsed = (double)getTickCount()-t;
-//        cout << "Last iteration time: " << elapsed/getTickFrequency() << endl;
-//        t = (double)getTickCount();
+//         Output time measurement
+        cout << endl << "-------Entering new iteration---------" << endl;
+        double elapsed = (double)getTickCount()-t;
+        cout << "Last iteration time: " << elapsed/getTickFrequency() << endl;
+        t = (double)getTickCount();
 
         //Updates image if input is a video. If not, the same image is kept for every iteration.
         if (sourceType == "video"){
@@ -146,7 +146,7 @@ int main(){
 
 //        // Generate results from found contours
 //        target->getResults(img);
-
+        delete hough;
         updateWindows(img);
         char c = cvWaitKey(30);    //Allow some time for program to display GUI
 //        c = cvWaitKey(99999999);
